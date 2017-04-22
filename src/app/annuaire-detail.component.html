@@ -1,0 +1,18 @@
+
+<div *ngIf="annuaire">
+  <h2>{{annuaire.nom}} details!</h2>
+  <div>
+    <label>id: </label>{{annuaire._id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="annuaire.nom" placeholder="name" [(ngModel)]="updateAnnuaire.nom"/>
+    <input [(ngModel)]="annuaire.description" placeholder="description" [(ngModel)]="updateAnnuaire.description"/>
+    <input [(ngModel)]="annuaire.typeProfessionnel" placeholder="typeProfessionnel" [(ngModel)]="updateAnnuaire.typeProfessionnel"/>
+    <input [(ngModel)]="annuaire.adresse" placeholder="adresse" [(ngModel)]="updateAnnuaire.adresse"/>
+    <input [(ngModel)]="annuaire.tel" placeholder="tel" [(ngModel)]="updateAnnuaire.tel"/>
+    <input [(ngModel)]="annuaire.mail" placeholder="mail" [(ngModel)]="updateAnnuaire.mail"/>
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+  
+</div>

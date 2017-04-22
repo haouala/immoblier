@@ -1,0 +1,6 @@
+<h1> login </h1>
+<input class="new-annuaire" placeholder="mail" autofocus="" [(ngModel)]="user.nom" >
+    <input class="new-annuaire"  placeholder="password" autofocus="" [(ngModel)]="user.prenom" >
+    
+    <button type="submit" (click)="login(user.nom,user.prenom)">Click Me!</button>
+
